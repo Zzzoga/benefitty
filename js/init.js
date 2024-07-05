@@ -2,7 +2,7 @@ var topSlider = new Swiper(".slider__content.swiper", {
 	slidesPerView: 1,
 	spaceBetween: 0,
 	loop: true,
-	effect: 'fade'
+	effect: 'fade',
 	// autoplay: {
     //     delay: 5000,
     //     disableOnInteraction: false,

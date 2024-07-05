@@ -74,6 +74,28 @@ document.addEventListener('DOMContentLoaded', () => {
 		
 	maskPhone('input[type="tel"]')
 
+	// BENEFITS ITEMS 
+	if (document.querySelector('.benefits__item') != null) {
+		const benefitsItems = document.querySelectorAll('.benefits__item')
+		const benefitsImgs = document.querySelectorAll('.benefits__device img')
+
+		benefitsItems.forEach(item => {
+			item.addEventListener('click', e => {
+				const itemNum = e.target.closest('.benefits__item').dataset.num
+				if (!e.target.closest('.benefits__item').classList.contains('active')) {
+					benefitsItems.forEach(item => item.classList.remove('active'))
+				}
+				benefitsImgs.forEach(img => img.classList.remove('active'))
+				benefitsImgs.forEach(img => {
+					if (img.dataset.num == itemNum) {
+						img.classList.add('active')
+					}
+				})
+				e.target.closest('.benefits__item').classList.add('active')
+			})
+		})
+	}
+
 	// PROFIT CALCULATOR
 	if (document.querySelector('.direction') != null) {
 
@@ -134,35 +156,50 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	// TOP SCREEN PROGRESSBAR SLIDER
-	const itemOne = document.querySelector('span.progress__check.item__1')
-	const itemTwo = document.querySelector('span.progress__check.item__2')
-	const itemThree = document.querySelector('span.progress__check.item__3')
+	const items = document.querySelectorAll('span.progress__check')
+	const imgItems = document.querySelectorAll('.mobile__device__item')
 	const progressBar = document.querySelector('.progress__bar')
+	const fullTime = items.length == 3 ? 16000 : 21000
 
 	function progressBarAnimation() {
+		const progressTime = items.length == 3 ? 15000 : 20000
+
 		setTimeout(() => {
 			progressBar.classList.add('active')
-			itemOne.classList.add('active')
 		}, 0)
 		setTimeout(() => {
-			itemTwo.classList.add('active')
+			items[1].classList.add('active')
+			imgItems[0].classList.remove('active')
+			imgItems[1].classList.add('active')
 			topSlider.slideTo(1)
 		}, 5000)
 		setTimeout(() => {
-			itemThree.classList.add('active')
+			items[2].classList.add('active')
+			imgItems[1].classList.remove('active')
+			imgItems[2].classList.add('active')
 			topSlider.slideTo(2)
 		}, 10000)
+		if (items.length > 3) {
+			setTimeout(() => {
+				items[3].classList.add('active')
+				imgItems[2].classList.remove('active')
+				imgItems[3].classList.add('active')
+				topSlider.slideTo(3)
+			}, 15000)
+		}
 		setTimeout(() => {
 			topSlider.slideTo(0)
 			progressBar.classList.remove('active')
-			itemOne.classList.remove('active')
-			itemTwo.classList.remove('active')
-			itemThree.classList.remove('active')
-		}, 15000)
+			items.forEach(item => item.classList.remove('active'))
+			imgItems.forEach(item => item.classList.remove('active'))
+			items[0].classList.add('active')
+			imgItems[0].classList.add('active')
+		}, progressTime)
 	}
 
 	progressBarAnimation()
-	let progressTimer = setInterval(() => progressBarAnimation(), 15000);
+	let progressTimer = setInterval(() => progressBarAnimation(), fullTime);
+
 })
 
 
