@@ -1314,7 +1314,8 @@ section.platform .section__wrapper {
 .view__container {
     display: flex;
     width: 100%;
-    padding: 10px 110px 0;
+    padding: 10px 120px 0;
+    height: 510px;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -1324,6 +1325,11 @@ section.platform .section__wrapper {
     display: flex;
     align-items: center;
     gap: 32px;
+    right: 0;
+}
+
+.view__column.right {
+    left: 0;
 }
 
 .inner__column {
@@ -1354,24 +1360,30 @@ p.base {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 200px;
+    justify-content: center;
+    max-width: 403px;
+    width: 100%;
+    height: 280px;
     background: var(--grey);
     box-shadow: 0px 11px 31px 0px #00000099;
-    padding: 15px 20px;
+    padding: 15px 45px;
     border-radius: 8px;
-    gap: 15px;
+    gap: 20px;
     position: relative;
 }
 
 p.view__item__title {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
     color: var(--blue);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
 }
 
-p.view__item__text {
+.view__item__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
     text-align: center;
 }
 
@@ -1401,7 +1413,8 @@ p.view__item__text {
     align-items: center;
     background: url(../img/circle_shadows.svg) no-repeat center;
     position: absolute;
-    left: 540px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .view__column.right {
@@ -1409,7 +1422,6 @@ p.view__item__text {
     flex-direction: column;
     gap: 79px;
     align-items: center;
-    max-width: 360px;
 }
 
 .view__column.right .inner__row:nth-child(2) {
@@ -1474,6 +1486,7 @@ section.form .section__wrapper {
     padding: 60px 95px;
     gap: 48px;
     background: var(--black);
+    align-items: flex-start;
 }
 
 p.form__title {
@@ -1482,6 +1495,7 @@ p.form__title {
     line-height: 43.2px;
     text-align: left;
     max-width: 485px;
+    width: 100%;
 }
 
 .form__banner {

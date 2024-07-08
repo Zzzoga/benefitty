@@ -13,6 +13,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="css/aos.css"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -65,8 +66,8 @@
 	<section class="top__screen">
 		<div class="section__wrapper">
 			<div class="slider__wrapper">
-				<h1 class="title">Создавайте собственную удобную программу лояльности</h1>
-				<div class="slider__container">
+				<h1 class="title" data-aos="fade-up">Создавайте собственную удобную программу лояльности</h1>
+				<div class="slider__container" data-aos="fade-up" data-aos-delay="100">
 					<div class="slider__progress">
 						<div class="progress__line"></div>
 						<div class="progress__bar"></div>
@@ -84,13 +85,21 @@
 						</div>
 					</div>
 				</div>
-				<div class="top__btns">
+				<div class="top__btns" data-aos="fade-up" data-aos-delay="200">
 					<button class="btn white__btn">Узнать подробнее</button>
 				</div>
 			</div>
-			<div class="mobile">
-				<div class="mobile__device page__3">
-					<img src="img/mobile_3.png" alt="">
+			<div class="mobile" data-aos="fade-left" data-aos-delay="300">
+				<div class="mobile__device">
+					<div class="mobile__device__item active" data-num="1">
+						<img src="img/mobile_1_1.png" alt="">
+					</div>
+					<div class="mobile__device__item" data-num="2">
+						<img src="img/mobile_1_2.png" alt="">
+					</div>
+					<div class="mobile__device__item" data-num="3">
+						<img src="img/mobile_1_3.png" alt="">
+					</div>
 				</div>
 				<div class="app__btns">
 					<a href="#" class="download__btn apple">
@@ -129,7 +138,7 @@
 
 	<section class="video">
 		<div class="section__wrapper">
-			<div class="video__wrapper">
+			<div class="video__wrapper" data-aos="fade-up">
 				<span class="play__btn">
 					<svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M26 15L0.499999 29.7224L0.5 0.277567L26 15Z" fill="white"/>
@@ -139,7 +148,7 @@
 					<source src="video/video.mp4" type='video/mp4'>
 				</video>
 			</div>
-			<div class="video__btns">
+			<div class="video__btns" data-aos="fade-up">
 				<button class="btn">Узнать подробнее</button>
 				<a href="#" class="btn wo__bg">Скачать презентацию</a>
 			</div>
@@ -148,23 +157,23 @@
 
 	<section class="instruments">
 		<div class="section__wrapper">
-			<h2 class="section__title"><span class="blue">Инструменты</span> для вашего бизнеса</h2>
+			<h2 class="section__title" data-aos="fade-up"><span class="blue">Инструменты</span> для вашего бизнеса</h2>
 			<div class="instruments__items">
-				<div class="instruments__item">
+				<div class="instruments__item" data-aos="fade-right" data-aos-delay="200">
 					<div class="instrument__icon">
 						<img src="img/instrument_1.svg" alt="">
 					</div>
 					<p class="instrument__title">Программа лояльности</p>
 					<p class="instrument__text">Стимулирует чаще покупать у вас. Процесс накопления и траты бонусов, выгодные предложения на праздники — повод совершать покупки чаще.</p>
 				</div>
-				<div class="instruments__item">
+				<div class="instruments__item" data-aos="fade-right" data-aos-delay="400">
 					<div class="instrument__icon">
 						<img src="img/instrument_2.svg" alt="">
 					</div>
 					<p class="instrument__title">Клиентская база</p>
 					<p class="instrument__text">Позволяет понимать потребности своих клиентов. Сбор, безопасное хранение и быстрый доступ к информации о покупателях.</p>
 				</div>
-				<div class="instruments__item">
+				<div class="instruments__item" data-aos="fade-right" data-aos-delay="600">
 					<div class="instrument__icon">
 						<img src="img/instrument_3.svg" alt="">
 					</div>
@@ -178,21 +187,21 @@
 	<section class="bank">
 		<div class="section__wrapper">
 			<div class="bank__container">
-				<h2 class="section__title"><span class="blue">Мобильное приложение BenefittY </span>для действующих и новых покупателей</h2>
+				<h2 class="section__title" data-aos="fade-up"><span class="blue">Мобильное приложение BenefittY </span>для действующих и новых покупателей</h2>
 				<div class="bank__wrapper">
-					<div class="bank__item">
+					<div class="bank__item" data-aos="fade-right" data-aos-delay="200">
 						<div class="bank__item__mobile">
 							<img src="img/mobile__bank.png" alt="">
 						</div>
 						<p class="bank__item__title"><span class="blue">Персональные предложения</span>от каждого ритейлера</p>
 					</div>
-					<div class="bank__item">
+					<div class="bank__item" data-aos="fade-right" data-aos-delay="400">
 						<div class="bank__item__mobile">
 							<img src="img/mobile__bank.png" alt="">
 						</div>
 						<p class="bank__item__title"><span class="blue">Картхолдер карт лояльности</span>в мобильном банке</p>
 					</div>
-					<div class="bank__item">
+					<div class="bank__item" data-aos="fade-right" data-aos-delay="600">
 						<div class="bank__item__mobile">
 							<img src="img/mobile__bank.png" alt="">
 						</div>
@@ -200,22 +209,22 @@
 					</div>
 				</div>
 			</div>
-			<a href="#" class="btn big__btn">Узнать подробнее</a>
+			<a href="#" class="btn big__btn" data-aos="fade-up">Узнать подробнее</a>
 		</div>
 	</section>
 
 	<section class="versus">
 		<div class="section__wrapper">
-			<h2 class="section__title"><span class="blue">Benefitty</span> VS другие сервисы</h2>
+			<h2 class="section__title" data-aos="fade-up"><span class="blue">Benefitty</span> VS другие сервисы</h2>
 			<div class="versus__items">
-				<div class="versus__item blue">
+				<div class="versus__item blue" data-aos="fade-right" data-aos-delay="200">
 					<div class="versus__li">Доступно даже микро бизнесу  </div>
 					<div class="versus__li">Максимально адаптировано под малый бизнес  </div>
 					<div class="versus__li">Искусственный интеллект быстро подберет оптимальную программу для вашего бизнеса  </div>
 					<div class="versus__li">Все действия осуществляются через кассовый терминал </div>
 					<div class="versus__li">Подробная аналитика показывает, как растет ваша прибыль</div>
 				</div>
-				<div class="versus__item">
+				<div class="versus__item" data-aos="fade-left" data-aos-delay="200">
 					<div class="versus__li">Доступно только крупному бизнесу</div>
 					<div class="versus__li">Требует времени и/или отдельного сотрудника </div>
 					<div class="versus__li">Требуется ручная настройка правил программы лояльности  </div>
@@ -227,10 +236,10 @@
 		</div>
 	</section>
 
-	<section class="advantages">
+	<section class="advantages profit">
 		<div class="section__wrapper">
-			<h2 class="section__title">Как запустить <span class="blue">программу лояльности?</span></h2>
-			<div class="advantages__items swiper">
+			<h2 class="section__title" data-aos="fade-up">Как запустить <span class="blue">программу лояльности?</span></h2>
+			<div class="advantages__items swiper" data-aos="fade-up" data-aos-delay="200">
 				<div class="swiper-wrapper">
 					<div class="advantages__item swiper-slide">
 						<p class="advantages__item__title">Указываем сферу</p>
@@ -279,16 +288,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="advantages__slider__dots"></div>
-			<button class="btn">Узнать подробнее</button>
+			<div class="advantages__slider__dots" data-aos="fade-up" data-aos-delay="300"></div>
+			<button class="btn" data-aos="fade-up" data-aos-delay="400">Узнать подробнее</button>
 		</div>
 	</section>
 
 	<section class="calc">
 		<div class="section__wrapper">
-			<h2 class="section__title">Калькулятор</h2>
+			<h2 class="section__title" data-aos="fade-up">Калькулятор</h2>
 			<div class="calc__container">
-				<div class="form__wrapper">
+				<div class="form__wrapper" data-aos="fade-right" data-aos-delay="200">
 					<div class="error__message disabled"></div>
 					<div class="form__row">
 						<p class="input__name">Сфера бизнеса</p>
@@ -320,7 +329,7 @@
 					</div>
 					<button class="form__submit">Рассчитать</button>
 				</div>
-				<div class="result__banner">
+				<div class="result__banner" data-aos="fade-left" data-aos-delay="200">
 					<p class="result__title">Результаты</p>
 					<div class="result__list">
 						<div class="result__item bonus">
@@ -350,9 +359,9 @@
 
 	<section class="tariffs">
 		<div class="section__wrapper">
-			<h2 class="section__title"><span class="blue">Тарифные</span> планы</h2>
+			<h2 class="section__title" data-aos="fade-up"><span class="blue">Тарифные</span> планы</h2>
 			<div class="tariffs__container">
-				<div class="tariff__item info">
+				<div class="tariff__item info" data-aos="fade-right" data-aos-delay="200">
 					<div class="tariff__header">
 						<p class="tariff__name">Тарифные планы</p>
 					</div>
@@ -369,7 +378,7 @@
 						<p class="tariff__item__info">Увеличение выручки по клиентам с картами лояльности</p>
 					</div>
 				</div>
-				<div class="tariff__item base">
+				<div class="tariff__item base" data-aos="fade-right" data-aos-delay="400">
 					<div class="tariff__header">
 						<p class="tariff__name">Базовый</p>
 						<p class="price__type">Стоимость за одну торговую точку</p>
@@ -402,7 +411,7 @@
 						<p class="tariff__params__text">+13</p>
 					</div>
 				</div>
-				<div class="tariff__item bussiness">
+				<div class="tariff__item bussiness" data-aos="fade-right" data-aos-delay="600">
 					<div class="tariff__header">
 						<p class="tariff__name">Бизнес</p>
 						<p class="price__type">Стоимость за одну торговую точку</p>
@@ -436,14 +445,14 @@
 					</div>
 				</div>
 			</div>
-			<button class="btn">Узнать подробнее</button>
+			<button class="btn" data-aos="fade-up">Узнать подробнее</button>
 		</div>
 	</section>
 
 	<section class="true">
 		<div class="section__wrapper">
-			<h2 class="section__title">Нам <span class="blue">доверяют</span></h2>
-			<div class="true__list">
+			<h2 class="section__title" data-aos="fade-up">Нам <span class="blue">доверяют</span></h2>
+			<div class="true__list" data-aos="fade-up" data-aos-delay="200">
 				<div class="true__item">
 					<div class="true__item__logo">
 						<img src="img/sber.svg" alt="">
@@ -522,8 +531,8 @@
 
 	<section class="media">
 		<div class="section__wrapper">
-			<h2 class="section__title">СМИ <span class="blue">о нас</span></h2>
-			<div class="media__items swiper">
+			<h2 class="section__title" data-aos="fade-up">СМИ <span class="blue">о нас</span></h2>
+			<div class="media__items swiper" data-aos="fade-up" data-aos-delay="200">
 				<div class="swiper-wrapper">
 					<a href="#" class="media__item swiper-slide">
 						<div class="media__item__info">
@@ -569,12 +578,12 @@
 					</a>
 				</div>
 			</div>
-			<div class="media__items__dots"></div>
+			<div class="media__items__dots" data-aos="fade-up" data-aos-delay="200"></div>
 		</div>
 	</section>
 
 	<footer class="footer">
-		<div class="section__wrapper">
+		<div class="section__wrapper" data-aos="fade-up">
 			<div class="footer__top">
 				<div class="footer__nav">
 					<div class="widget">
@@ -687,6 +696,7 @@
 			touchpadSupport   : true,
 		})
 	</script>
+	<script src="js/aos.js"></script>
 	<script src="js/init.js"></script>
 	<script src="js/common.js"></script>
 

@@ -1,3 +1,5 @@
+AOS.init();
+
 var topSlider = new Swiper(".slider__content.swiper", {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -37,12 +39,36 @@ var reviewsSlider = new Swiper(".reviews__slider.swiper", {
     },
 });
 
-var advantagesSlider = new Swiper(".advantages__items.swiper", {
+var advantagesCorporateSlider = new Swiper("section.corporate .advantages__items.swiper", {
 	slidesPerView: 1,
 	spaceBetween: 10,
 	loop: true,
 	pagination: {
-        el: ".advantages__slider__dots",
+        el: "section.corporate .advantages__slider__dots",
+		clickable: true,
+    },
+	breakpoints: {
+        992: {
+		  	slidesPerView: 2,
+          	spaceBetween: 13,
+        },
+        1180: {
+		  	slidesPerView: 2,
+          	spaceBetween: 16,
+        },
+		1600: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+    },
+});
+
+var advantagesProfitSlider = new Swiper("section.profit .advantages__items.swiper", {
+	slidesPerView: 1,
+	spaceBetween: 10,
+	loop: true,
+	pagination: {
+        el: "section.profit .advantages__slider__dots",
 		clickable: true,
     },
 	breakpoints: {

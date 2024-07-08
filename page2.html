@@ -13,6 +13,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="css/aos.css"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -65,9 +66,9 @@
 	<section class="top__screen">
 		<div class="section__wrapper">
 			<div class="slider__wrapper">
-				<h1 class="title">Взаимодействие с покупателем через benefitty и мобильные банки</h1>
-				<p class="subtitle">Почему это удобно и выгодно?</p>
-				<div class="slider__container">
+				<h1 class="title" data-aos="fade-up">Взаимодействие с покупателем через benefitty и мобильные банки</h1>
+				<p class="subtitle" data-aos="fade-up" data-aos-delay="100">Почему это удобно и выгодно?</p>
+				<div class="slider__container" data-aos="fade-up" data-aos-delay="200">
 					<div class="slider__progress">
 						<div class="progress__line"></div>
 						<div class="progress__bar"></div>
@@ -85,14 +86,22 @@
 						</div>
 					</div>
 				</div>
-				<div class="top__btns">
+				<div class="top__btns" data-aos="fade-up" data-aos-delay="300">
 					<button class="btn white__btn">Начать пользоваться</button>
 					<a href="#" class="btn white__btn wo__bg">Скачать презентацию</a>
 				</div>
 			</div>
-			<div class="mobile">
-				<div class="mobile__device page__2">
-					<img src="img/mobile_2.png" alt="">
+			<div class="mobile" data-aos="fade-left" data-aos-delay="400">
+				<div class="mobile__device">
+					<div class="mobile__device__item active" data-num="1">
+						<img src="img/mobile_1_1.png" alt="">
+					</div>
+					<div class="mobile__device__item" data-num="2">
+						<img src="img/mobile_1_2.png" alt="">
+					</div>
+					<div class="mobile__device__item" data-num="3">
+						<img src="img/mobile_1_3.png" alt="">
+					</div>
 				</div>
 				<div class="app__btns">
 					<a href="#" class="download__btn apple">
@@ -131,7 +140,7 @@
 
 	<section class="video">
 		<div class="section__wrapper">
-			<div class="video__wrapper">
+			<div class="video__wrapper" data-aos="fade-up">
 				<span class="play__btn">
 					<svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M26 15L0.499999 29.7224L0.5 0.277567L26 15Z" fill="white"/>
@@ -141,17 +150,17 @@
 					<source src="video/video.mp4" type='video/mp4'>
 				</video>
 			</div>
-			<div class="video__btns">
+			<div class="video__btns" data-aos="fade-up">
 				<button class="btn">Начать пользоваться</button>
 				<a href="#" class="btn wo__bg">Скачать презентацию</a>
 			</div>
 		</div>
 	</section>
 
-	<section class="advantages">
+	<section class="advantages profit">
 		<div class="section__wrapper">
-			<h2 class="section__title">Что вы <span class="blue">получаете?</span></h2>
-			<div class="advantages__items swiper">
+			<h2 class="section__title" data-aos="fade-up">Что вы <span class="blue">получаете?</span></h2>
+			<div class="advantages__items swiper" data-aos="fade-up" data-aos-delay="200">
 				<div class="swiper-wrapper">
 					<div class="advantages__item swiper-slide">
 						<div class="slide__counter">
@@ -190,29 +199,29 @@
 					</div>
 				</div>
 			</div>
-			<div class="advantages__slider__dots"></div>
-			<button class="btn">Узнать подробнее</button>
+			<div class="advantages__slider__dots" data-aos="fade-up" data-aos-delay="300"></div>
+			<button class="btn" data-aos="fade-up" data-aos-delay="400">Узнать подробнее</button>
 		</div>
 	</section>
 
 	<section class="bank">
 		<div class="section__wrapper">
 			<div class="bank__container">
-				<h2 class="section__title">BenefittY в мобильных банках <br>и <span class="blue">сервисе BenefittY</span></h2>
+				<h2 class="section__title" data-aos="fade-up">BenefittY в мобильных банках <br>и <span class="blue">сервисе BenefittY</span></h2>
 				<div class="bank__wrapper">
-					<div class="bank__item">
+					<div class="bank__item" data-aos="fade-right" data-aos-delay="200">
 						<div class="bank__item__mobile">
 							<img src="img/mobile__bank.png" alt="">
 						</div>
 						<p class="bank__item__title"><span class="blue">Персональные предложения</span>от каждого ритейлера</p>
 					</div>
-					<div class="bank__item">
+					<div class="bank__item" data-aos="fade-right" data-aos-delay="400">
 						<div class="bank__item__mobile">
 							<img src="img/mobile__bank.png" alt="">
 						</div>
 						<p class="bank__item__title"><span class="blue">Картхолдер карт лояльности</span>в мобильном банке</p>
 					</div>
-					<div class="bank__item">
+					<div class="bank__item" data-aos="fade-right" data-aos-delay="600">
 						<div class="bank__item__mobile">
 							<img src="img/mobile__bank.png" alt="">
 						</div>
@@ -220,14 +229,14 @@
 					</div>
 				</div>
 			</div>
-			<a href="#" class="btn big__btn">Узнать подробнее</a>
+			<a href="#" class="btn big__btn" data-aos="fade-up">Узнать подробнее</a>
 		</div>
 	</section>
 
 	<section class="platform">
 		<div class="section__wrapper">
-			<h2 class="section__title">Как работает <span class="blue">платформа?</span></h2>
-			<div class="platform__container">
+			<h2 class="section__title" data-aos="fade-right">Как работает <span class="blue">платформа?</span></h2>
+			<div class="platform__container" data-aos="fade-up" data-aos-delay="200">
 				<div class="platform__row">
 					<p class="row__text">Персональные скидки применяются автоматически вместе с платежом</p>
 				</div>
@@ -260,33 +269,13 @@
 
 	<section class="view">
 		<div class="section__wrapper">
-			<h2 class="section__title">Как работает <span class="blue">персонализация предложений?</span></h2>
-			<div class="view__container">
+			<h2 class="section__title" data-aos="fade-up">Как работает <span class="blue">персонализация предложений?</span></h2>
+			<div class="view__container" data-aos="fade-up" data-aos-delay="200">
 				<div class="view__column left">
-					<div class="inner__column">
-						<div class="view__item__wrapper">
-							<p class="base">Формирование базы</p>
-							<div class="view__item">
-								<p class="view__item__title">Банки</p>
-								<p class="view__item__text">Хешированный пул клиентов с транзакциями</p>
-							</div>
-						</div>
-						<div class="view__item__wrapper">
-							<p class="base">Сбор данных</p>
-							<div class="view__item">
-								<p class="view__item__title">Ретейлеры</p>
-								<p class="view__item__text">
-									<span>Чеки</span>
-									<span>Сегментирование аудитории</span>
-									<span>Триггерные предложения</span>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="inner__column">
-						<div class="view__item">
-							<p class="view__item__title">Анализ обезличенных данных по признакам</p>
-							<p class="view__item__text">Расходы, Предпочтения, Семья, Гео, Бренды, Интересы, Поездки, Активность + 46 признаков</p>
+					<div class="view__item">
+						<p class="view__item__title">Анализ транзакций и чеков клиента с помощью ИИ:</p>
+						<div class="view__item__text">
+							<p class="view__item__paragraph">Расходы<br>Интересы<br>Семья<br>Гео<br><span class="blue">+50</span> признаков
 						</div>
 					</div>
 				</div>
@@ -294,18 +283,8 @@
 					<div class="circle__logo"></div>
 				</div>
 				<div class="view__column right">
-					<div class="inner__row">
-						<div class="view__item">
-							<p class="view__item__title">Формируются гиперперсональные предложения для клиентов банков</p>
-						</div>
-					</div>
-					<div class="inner__row">
-						<div class="view__item">
-							<p class="view__item__text">Размещаются на витрине персональных предложений (формируется на стороне Benefitty )</p>
-						</div>
-						<div class="view__item">
-							<p class="view__item__text">Размещается на витрине предложений в мобильном банке</p>
-						</div>
+					<div class="view__item">
+						<p class="view__item__title">Формирование и донесение персональных предложений через банк</p>
 					</div>
 				</div>
 			</div>
@@ -314,7 +293,7 @@
 
 	<section class="form">
 		<div class="section__wrapper">
-			<div class="form__wrapper">
+			<div class="form__wrapper" data-aos="fade-right" data-aos-delay="200">
 				<p class="form__title">Договориться о встрече <span class="blue">для глубокого обсуждения</span></p>
 				<form action="">
 					<div class="form__row">
@@ -328,7 +307,7 @@
 					<input type="submit" value="Отправить" class="form__submit">
 				</form>
 			</div>
-			<div class="form__banner">
+			<div class="form__banner" data-aos="fade-left" data-aos-delay="200">
 				<svg width="506" height="89" viewBox="0 0 506 89" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g clip-path="url(#clip0_535_387)">
 					<path d="M75.164 27.9394C76.0077 29.1788 75.8523 30.8226 74.6978 32.8707C73.4335 35.1338 71.5618 37.0069 69.2894 38.2832C66.9303 39.5881 64.2654 40.2544 61.5632 40.2148H41.3818L49.3745 26.0869H69.5492C72.4532 26.0869 74.3115 26.7066 75.164 27.9394Z" fill="white"/>
@@ -356,8 +335,8 @@
 
 	<section class="true">
 		<div class="section__wrapper">
-			<h2 class="section__title">Нам <span class="blue">доверяют</span></h2>
-			<div class="true__list">
+			<h2 class="section__title" data-aos="fade-up">Нам <span class="blue">доверяют</span></h2>
+			<div class="true__list" data-aos="fade-up" data-aos-delay="200">
 				<div class="true__item">
 					<div class="true__item__logo">
 						<img src="img/sber.svg" alt="">
@@ -436,8 +415,8 @@
 
 	<section class="media">
 		<div class="section__wrapper">
-			<h2 class="section__title">СМИ <span class="blue">о нас</span></h2>
-			<div class="media__items swiper">
+			<h2 class="section__title" data-aos="fade-up">СМИ <span class="blue">о нас</span></h2>
+			<div class="media__items swiper" data-aos="fade-up" data-aos-delay="200">
 				<div class="swiper-wrapper">
 					<a href="#" class="media__item swiper-slide">
 						<div class="media__item__info">
@@ -483,12 +462,12 @@
 					</a>
 				</div>
 			</div>
-			<div class="media__items__dots"></div>
+			<div class="media__items__dots" data-aos="fade-up" data-aos-delay="400"></div>
 		</div>
 	</section>
 
 	<footer class="footer">
-		<div class="section__wrapper">
+		<div class="section__wrapper" data-aos="fade-up">
 			<div class="footer__top">
 				<div class="footer__nav">
 					<div class="widget">
@@ -601,6 +580,7 @@
 			touchpadSupport   : true,
 		})
 	</script>
+	<script src="js/aos.js"></script>
 	<script src="js/init.js"></script>
 	<script src="js/common.js"></script>
 
