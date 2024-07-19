@@ -22,6 +22,29 @@ document.addEventListener('DOMContentLoaded', () => {
 	// 		document.querySelector('a.logo img').src = '../img/logo.svg'
 	// 	}
 	// })
+
+	// Modal nav open/hidden
+	document.querySelector('.burger').addEventListener('click', e => {
+		e.preventDefault()
+		if (!e.target.closest('.burger').classList.contains('active')) {
+			e.target.closest('.burger').classList.add('active')
+			document.querySelector('.modal__nav').classList.add('active')
+			document.querySelector('body').classList.add('hidden')
+		} else {
+			e.target.closest('.burger').classList.remove('active')
+			document.querySelector('.modal__nav').classList.remove('active')
+			document.querySelector('body').classList.remove('hidden')
+		}
+	})
+
+	// Modal nav link action events
+	document.querySelectorAll('a.modal__nav__link').forEach(link => {
+		link.addEventListener('click', e => {
+			document.querySelector('.burger').classList.remove('active')
+			document.querySelector('.modal__nav').classList.remove('active')
+			document.querySelector('body').classList.remove('hidden')
+		})
+	})
 	
 	// Smooth scroll when link clicked
 	const $page = $('html, body');
